@@ -1,0 +1,193 @@
+body{
+    font-family: Tahoma;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(22, 13, 31);
+}
+.navegacion{
+    list-style: none;
+}
+.navegacion a{
+    text-decoration: none;
+    display: block;
+    float: left;
+    color: whitesmoke;
+    padding: 40px; /*espaciadio entre letras*/
+    font-size: 20px;
+}
+.navegacion a:hover{
+    color: rgb(219, 217, 105);
+}
+
+/*portada*/
+/*img de fondo*/
+.portada{
+    background: url("../img/.jpg") no-repeat center center;
+    width: 100%;
+    height: 1000px;
+    margin-top: 1px;
+    float: left;
+}
+/*seccion formulario*/
+
+
+.portada{
+    font-family: 'roboto';
+    background: #3c5c63;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5f1319, #2a063b, #0c1f24);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #226d34, #1c0d24, #4f45db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+form{
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+input:focus{
+    outline: none;
+    color: #5e5d5d;
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    transition: 0.3s ease width;
+    left: 0;
+}
+input:focus~.barra::before{
+    width: 100%;
+}
+button{
+    font-family: 'roboto';
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media screen and(max-widht:500px){
+    form{
+        width: 80px;
+    }
+}
+
+
+/*termina formulario*/
+
+/*footer*/
+.pie-pagina{
+    width: 100%;
+    float: left;
+    margin-top: 1px;
+    background-color: #100111;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social img{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #140116;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social img:hover{
+    color: rgb(36, 16, 122);
+}
+.pie-pagina .grupo-2{
+    background-color: #1a032c;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
